@@ -16,7 +16,7 @@
 <link rel="apple-touch-icon" href="icon.png" />
 <link rel="shortcut icon" href="icon.png">
 <link type="text/css" rel="stylesheet" href="client.css">
-<title>share my position</title>
+<title>my position (static)</title>
 <%
     String pos = request.getParameter(UpdatePositionServletImpl.PARAMETER_POSITION);
 	final String isTracked = request.getParameter(UpdatePositionServletImpl.PARAMETER_TRACKED);
