@@ -52,6 +52,7 @@
 
   ga('create', 'UA-46087713-3', 'smp-next.appspot.com');
   ga('require', 'linkid', 'linkid.js');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
 
 </script>
@@ -66,7 +67,6 @@ google_ad_height = 50;
 //-->
 </script>
 <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-<div class="title"><span>My position</span><br />
 <button onclick="window.location='index.html'" class="button">click here to share your own position</button>
 <br />
 <img src="http://staticmap.openstreetmap.de/staticmap.php?center=<%=pos%>&zoom=15&size=320x240&markers=<%=pos%>,ol-marker-blue" alt="i am here" />

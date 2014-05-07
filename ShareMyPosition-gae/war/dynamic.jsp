@@ -35,11 +35,13 @@
 
 		  ga('create', 'UA-46087713-3', 'smp-next.appspot.com');
 		  ga('require', 'linkid', 'linkid.js');
+		  ga('require', 'displayfeatures');
 		  ga('send', 'pageview');
 
 		</script>
 		<style>
 			body {
+				font-family: Verdana,sans-serif;
 			    padding: 0;
 			    margin: 0;
 			}
@@ -50,6 +52,7 @@
 		</style>
 	</head>
 	<body ng-controller='MapController' data-ng-init="init()">
+		<span>auto-refresh every 5 seconds… a blue line appears to show you the path.</span>
 		<leaflet id="map" defaults="defaults" center="center" markers="markers" paths="paths"></leaflet>
  		<script type="text/javascript">
  			
