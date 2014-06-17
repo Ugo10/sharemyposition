@@ -22,7 +22,7 @@
     <string name="add_nativelink_location_desc">for Android, iOS or Windows Phone</string>
     <string name="add_lat_lon_location">add the latitude and longitude</string>
     <string name="add_track_location">track my position</string>
-    <string name="track_location_notification">tracking is enable</string>
+    <string name="track_location_notification">tracking is enabled</string>
     <string name="track_stop_it">stop</string>
     <string name="options">options</string>
     <string name="hide">map</string>
