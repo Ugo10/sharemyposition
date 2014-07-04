@@ -682,11 +682,13 @@ public class ShareMyPosition extends MapActivity implements GooglePlayServicesCl
     @Override
     public void onConnected(Bundle bundle)
     {
-        final LocationRequest locationRequest = LocationRequest.create()
-                .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
-                .setNumUpdates(1);
-        this.mLocationClient.requestLocationUpdates(locationRequest, this);
-        Log.d(LOG, "onConnected");
+	if (this.mLocationClient != null && this.mLocationClient.isConnected()) {
+		final LocationRequest locationRequest = LocationRequest.create()
+			.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+			.setNumUpdates(1);
+		this.mLocationClient.requestLocationUpdates(locationRequest, this);
+		Log.d(LOG, "onConnected");
+        }
     }
 
     @Override
